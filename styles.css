@@ -20,15 +20,27 @@ body {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  min-width: 320px;
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 2.5rem;
   color: #f1c40f;
   text-shadow: 2px 2px #000;
 }
 
+/* Move Counter */
+#moveCounter {
+  font-size: 1.1rem;
+  color: #90ee90;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+}
+
+/* Puzzle Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 80px);
@@ -36,6 +48,7 @@ h1 {
   margin: 0 auto 20px;
 }
 
+/* Tiles */
 .tile {
   width: 80px;
   height: 80px;
@@ -63,6 +76,14 @@ h1 {
   box-shadow: none;
 }
 
+/* Status Text */
+#status {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #00e676;
+}
+
+/* Control Buttons */
 .controls button {
   padding: 10px 20px;
   background: #f39c12;
@@ -73,6 +94,7 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin: 0 6px;
 }
 
 .controls button:hover {
